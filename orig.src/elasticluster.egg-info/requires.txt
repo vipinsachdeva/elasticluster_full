@@ -1,0 +1,17 @@
+PyCLI
+ansible>=2.0,!=2.1.1.0
+click>=4.0
+coloredlogs
+configobj
+netaddr
+paramiko
+voluptuous>=0.8.2
+boto
+google-api-python-client
+python-gflags
+simplejson>=2.5.0
+pytz
+httplib2>=0.9.1
+azure
+netifaces
+python-novaclient

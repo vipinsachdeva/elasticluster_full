@@ -1,0 +1,3 @@
+[console_scripts]
+elasticluster = elasticluster.__main__:main
+

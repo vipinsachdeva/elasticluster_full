@@ -1,0 +1,35 @@
+2017-01-18 23:01:29 ubuntu gc3.elasticluster[8144] ERROR Apparently, Amazon does not compute the RSA key fingerprint as we do! We cannot check if the uploaded keypair is correct!
+2017-01-18 23:01:29 ubuntu gc3.elasticluster[8144] ERROR Apparently, Amazon does not compute the RSA key fingerprint as we do! We cannot check if the uploaded keypair is correct!
+2017-01-18 23:01:29 ubuntu gc3.elasticluster[8144] ERROR Error starting instance: EC2ResponseError: 401 Unauthorized
+<?xml version="1.0" encoding="UTF-8"?>
+<Response><Errors><Error><Code>OptInRequired</Code><Message>In order to use this AWS Marketplace product you need to accept terms and subscribe. To do so please visit http://aws.amazon.com/marketplace/pp?sku=ri5gl217h85d7yusod5rmscq</Message></Error></Errors><RequestID>050a0a81-8e50-4b07-92c9-46a3456133c8</RequestID></Response>
+2017-01-18 23:01:29 ubuntu gc3.elasticluster[8144] ERROR Could not start node `compute001`: EC2ResponseError: 401 Unauthorized
+<?xml version="1.0" encoding="UTF-8"?>
+<Response><Errors><Error><Code>OptInRequired</Code><Message>In order to use this AWS Marketplace product you need to accept terms and subscribe. To do so please visit http://aws.amazon.com/marketplace/pp?sku=ri5gl217h85d7yusod5rmscq</Message></Error></Errors><RequestID>050a0a81-8e50-4b07-92c9-46a3456133c8</RequestID></Response> -- <class 'elasticluster.exceptions.InstanceError'>
+2017-01-18 23:01:29 ubuntu gc3.elasticluster[8144] ERROR Error starting instance: EC2ResponseError: 400 Bad Request
+<?xml version="1.0" encoding="UTF-8"?>
+<Response><Errors><Error><Code>InvalidParameterCombination</Code><Message>Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.</Message></Error></Errors><RequestID>4da8d159-c895-4e64-b2e4-b98685944609</RequestID></Response>
+2017-01-18 23:01:29 ubuntu gc3.elasticluster[8144] ERROR Could not start node `frontend001`: EC2ResponseError: 400 Bad Request
+<?xml version="1.0" encoding="UTF-8"?>
+<Response><Errors><Error><Code>InvalidParameterCombination</Code><Message>Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.</Message></Error></Errors><RequestID>4da8d159-c895-4e64-b2e4-b98685944609</RequestID></Response> -- <class 'elasticluster.exceptions.InstanceError'>
+Starting cluster `mycluster2` with 1 frontend nodes.
+Starting cluster `mycluster2` with 1 compute nodes.
+(this may take a while...)
+Configuring the cluster.
+(this too may take a while...)
+Your cluster is ready!
+
+Cluster name:     mycluster2
+Cluster template: aws-slurm
+Default ssh to node: frontend001
+- frontend nodes: 1
+- compute nodes: 1
+
+To login on the frontend node, run the command:
+
+    elasticluster ssh mycluster2
+
+To upload or download files to the cluster, use the command:
+
+    elasticluster sftp mycluster2
+
